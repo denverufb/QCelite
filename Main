@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QC Elite STL Youth Basketball Camp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --sage: #D3DAD9;
+      --maroon: #715A5A;
+      --dark-gray: #44444E;
+      --charcoal: #37353E;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--sage);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--charcoal);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: var(--sage);
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--maroon);
+      margin-bottom: 15px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card strong {
+      color: var(--dark-gray);
+    }
+
+    .leader {
+      background-color: var(--maroon);
+      color: white;
+      border-radius: 6px;
+      padding: 35px;
+    }
+
+    .leader h2 {
+      color: white;
+    }
+
+    .cta {
+      background-color: var(--dark-gray);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background-color: var(--maroon);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: var(--charcoal);
+      color: var(--sage);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>QC Elite STL Youth Basketball Camp</h1>
+  <p>Develop Skills. Build Confidence. Play the Right Way.</p>
+</header>
+
+<section>
+  <h2>About the Camp</h2>
+  <p>
+    QC Elite STL Youth Basketball Camp is a three-week, high-intensity development program
+    designed for young athletes in the St. Louis area who want to improve their game,
+    confidence, and basketball IQ. This camp focuses on skill development, fundamentals,
+    conditioning, and competitive play in a positive and disciplined environment.
+  </p>
+
+  <div class="info-grid">
+    <div class="card">
+      <strong>Dates</strong><br>
+      3 Weeks Total<br>
+      Monday – Thursday<br>
+      (Specific dates announced soon)
+    </div>
+
+    <div class="card">
+      <strong>Time</strong><br>
+      9:00 AM – 1:00 PM
+    </div>
+
+    <div class="card">
+      <strong>Ages</strong><br>
+      Boys & Girls<br>
+      Ages 8–15
+    </div>
+
+    <div class="card">
+      <strong>Location</strong><br>
+      Principia High School Gymnasium<br>
+      St. Louis, Missouri
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>What Campers Will Learn</h2>
+  <div class="info-grid">
+    <div class="card">
+      Ball handling and control
+    </div>
+    <div class="card">
+      Shooting mechanics and shot selection
+    </div>
+    <div class="card">
+      Defense, footwork, and positioning
+    </div>
+    <div class="card">
+      Passing, spacing, and team concepts
+    </div>
+    <div class="card">
+      Game-speed drills and live competition
+    </div>
+    <div class="card">
+      Confidence, discipline, and leadership
+    </div>
+  </div>
+</section>
+
+<section class="leader">
+  <h2>Camp Director: Quentin Coleman (QC)</h2>
+  <p>
+    The camp is led by Quentin “QC” Coleman, one of the best high school basketball players
+    in America. A nationally ranked athlete from Principia High School, QC has competed
+    at the highest levels of youth and high school basketball and brings elite-level
+    experience directly to St. Louis youth.
+  </p>
+  <p>
+    QC’s leadership, work ethic, and knowledge of the game set the standard for this camp.
+    Campers will learn directly from someone who understands what it takes to compete
+    nationally while staying grounded, disciplined, and focused.
+  </p>
+</section>
+
+<section>
+  <h2>Camp Structure</h2>
+  <div class="info-grid">
+    <div class="card">
+      Daily warm-ups and conditioning
+    </div>
+    <div class="card">
+      Skill stations by age and ability
+    </div>
+    <div class="card">
+      Competitive games and challenges
+    </div>
+    <div class="card">
+      End-of-week evaluations and feedback
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Registration Coming Soon</h2>
+  <p>
+    Limited spots available to ensure quality instruction and attention.
+    Open to all St. Louis youth athletes regardless of school or program.
+  </p>
+  <a href="#">Register Interest</a>
+</section>
+
+<footer>
+  © 2026 QC Elite STL Youth Basketball Camp | Principia High School | St. Louis, MO
+</footer>
+
+</body>
+</html>
