@@ -1,30 +1,31 @@
 :root {
-  --sage: #D3DAD9;
-  --maroon: #715A5A;
-  --dark-gray: #44444E;
-  --charcoal: #37353E;
+  --orange: #F37021;
+  --black: #1C1C1C;
+  --gold: #FFD700;
+  --light-gray: #F2F2F2;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--sage);
-  color: var(--charcoal);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-gray);
+  color: var(--black);
   line-height: 1.6;
 }
 
 header {
-  background-color: var(--charcoal);
+  background-color: var(--black);
   color: white;
-  padding: 30px 20px;
+  padding: 25px 20px;
 }
 
 nav {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -36,48 +37,94 @@ nav a {
   text-decoration: none;
   margin-left: 20px;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--gold);
 }
 
 .hero {
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
+  background: url('basketball-bg.jpg') no-repeat center center/cover; /* replace with basketball image */
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: var(--orange);
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
   max-width: 700px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 section {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
 }
 
 h2 {
-  color: var(--maroon);
+  color: var(--orange);
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  margin-top: 30px;
 }
 
 .card {
   background-color: white;
-  padding: 25px;
-  border-radius: 6px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card img {
+  position: absolute;
+  width: 60px;
+  opacity: 0.2;
+  top: 15px;
+  right: 15px;
+}
+
+.leader {
+  background-color: var(--orange);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.leader img {
+  position: absolute;
+  width: 100px;
+  opacity: 0.15;
+  top: 10px;
+  left: 10px;
 }
 
 .cta {
-  background-color: var(--dark-gray);
+  background-color: var(--black);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -86,16 +133,24 @@ h2 {
 .cta a {
   display: inline-block;
   margin-top: 20px;
-  padding: 14px 30px;
-  background-color: var(--maroon);
+  padding: 16px 36px;
+  background-color: var(--orange);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta a:hover {
+  background-color: var(--gold);
+  color: var(--black);
 }
 
 footer {
-  background-color: var(--charcoal);
-  color: var(--sage);
+  background-color: var(--black);
+  color: var(--gold);
   text-align: center;
   padding: 20px;
   font-size: 14px;
